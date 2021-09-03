@@ -33,9 +33,9 @@ jobs:
         uses: docker/login-action@v1.10.0
         with:
           # Username used to log against the Docker registry
-          username: ${{ secerts.DOCKER_HUB_USERNAME }}
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
           # Password or personal access token used to log against the Docker registry
-          password: ${{ secerts.DOCKER_HUB_PASSWORD }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
           # Log out from the Docker registry at the end of a job
 
       # Runs a set of commands using the runners shell
