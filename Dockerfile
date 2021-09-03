@@ -32,7 +32,7 @@ RUN apt-get update \
         subversion \
     && rm -rf /var/lib/apt/lists/*
 
-ENV GRADLE_VERSION 7.2
+ENV GRADLE_VERSION 6.9
 ARG GRADLE_DOWNLOAD_SHA256=f581709a9c35e9cb92e16f585d2c4bc99b2b1a5f85d2badbd3dc6bff59e1e6dd
 RUN set -o errexit -o nounset \
     && echo "Downloading Gradle" \
